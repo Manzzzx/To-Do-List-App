@@ -1,0 +1,141 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 2.5rem;
+    color: #ff4500;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #cccccc;
+  }
+  
+  /* Input Container */
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-container input {
+    width: 75%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .input-container button {
+    padding: 0.4rem 1.2rem;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input-container button:hover {
+    background-color: #e43f00;
+  }
+  
+  /* To-do list */
+  ul {
+    list-style: none;
+  }
+  
+  #todo-list li {
+    background-color: #282828;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  
+  #todo-list li.completed {
+    text-decoration: line-through;
+    color: #777777;
+  }
+  
+  #todo-list li button {
+    background-color: transparent;
+    border: none;
+    color: #ff4500;
+    cursor: pointer;
+  }
+  
+  #todo-list li button:hover {
+    color: #e43f00;
+  }
+  
+  /* Progress Bar */
+  #progress-bar {
+    background-color: #333;
+    border-radius: 5px;
+    height: 8px;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  
+  #progress-fill {
+    height: 100%;
+    width: 0;
+    background-color: #ff4500;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #777777;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .input-container input {
+      width: 70%;
+    }
+  
+    .input-container button {
+      padding: 0.7rem 1rem;
+    }
+  }
+  
